@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+:root {
+  --mainBlue: #40ACF1;
+  --transparentBlue: rgba(64, 172, 241, 0.7);
+  --mainWhite: #FFFFFF;
+  --mainBlack: #292F36;
+  --mainGrey: rgb(216, 214, 214);
+  --mainYellow: #e3b505;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+}
+
+/* REM values to target root element 1REM = 16px */
+/* navbar*/
+.navbar {
+  background: var(--mainWhite);
+}
+
+.nav-icon {
+  font-size: 2rem;
+  color: var(--mainBlue);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.navbar-toggler {
+  color: var(--mainBlue)
+}
+
+.nav-link {
+  color: var(--mainBlack);
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  color: var(--mainBlue);
+}
+
+.nav-icon:hover {
+  color: var(--mainBlack);
+
+}
+
+/*header*/
+.header {
+  color: var(--mainWhite);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  overflow: hidden;
+}
+
+@keyframes zoo {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2) translateX(-5%)
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.height-max {
+  background: url(../img/headerBcg.jpeg);
+  height: 100vh;
+  mask-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation-name: zoo;
+  animation-duration: 20s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.title-heading {
+  color: rgb(0, 0, 0, 4, green, blue);
+  border-right: 0.3rem solid var(--mainBlue)
+}
+
+.tittle-icon:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+.tittle-icon {
+  text-decoration: none;
+}
+
+.tittle {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+/*Inventory why choice*/
+/* .skills
+{
+  /* background: var(--mainGrey); */
+.scetion-title-special {
+  background: var(--transparentBlue);
+  color: var(--mainWhite);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+/*single-skill*/
+.skills-icon {
+  font-size: 3rem;
+  color: var(--mainYellow);
+  background: var(--mainGrey);
+}
+
+.skills-icon:hover {
+  color: #e3b505;
+}
+
+.skills-underline {
+  width: 4rem;
+  height: 0.3rem;
+  border-bottom: 5px solid var(--mainBlue);
+  margin: 1rem auto;
+}
+
+.font-bold {
+  font-size: larger;
+}
+
+/*inventory*/
+.inventory {
+  background: var(--mainGrey);
+}
+
+.car-card {
+  border-radius: 0 !important;
+}
+
+.car-img {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+.car-value {
+  background: var(--mainBlue);
+  color: var(--mainWhite);
+  clip-path: polygon(15% 0, 85% 0, 100% 100%, 0 100%);
+  transition: all 1s linear;
+}
+
+.car-value:hover {
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.qustion {
+  background: url(/img/questionBcg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.qustion-gray {
+  background: rgb(79, 109, 122, 0.75);
+
+}
+
+.qustion-yellow {
+  background: rgb(277, 181, 5, 0.75);
+}
+
+.qustion-icon {
+  font-size: 4rem;
+  color: var(--mainBlue);
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.qustion-icon:hover {
+  transform: translateY(-10%);
+  color: var(--mainBlue);
+  text-decoration: none;
+  color: aqua;
+
+}
+
+.qustion-info {
+  color: var(--mainWhite);
+}
+
+/*feture*/
+.feauture {
+  background: var(--mainGrey);
+}
+
+.feture-item {
+  background: var(--mainWhite);
+  border-radius: 0.5rem;
+  opacity: 0.5rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.feture-item:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: var(--mainYellow);
+  cursor: pointer;
+  transition: 0.5 1s ease-in-out;
+
+}
+
+.feature-icon:hover {
+  color: aqua;
+}
+
+.img-container {
+  background: var(--mainBlue);
+  position: relative;
+  overflow: hidden;
+
+}
+
+.feature-photo {
+  transition: all 1s ease-in-out;
+}
+
+.img-container:hover .feature-photo{
+  transform: scale(1.3);
+  opacity: 0.5;
+}
+
+.feature-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: black;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.feature-link:hover
+{
+  color: var(--mainWhite);
+
+}
+/*khabar name*/
+.contant
+{
+  background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(../img/headerBcg.jpeg)center fixed no-repeat;
+}
+.contact-input
+{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: transparent;
+  border-color: var(--mainYellow);
+  color: var(--mainYellow) !important;
+  text-shadow: #292F36;
+  /* -webkit-text-fill-color: #40ACF1; */
+}
+.contact-input:focus
+{
+  background: transparent;
+  background-color: var(--mainYellow);
+}
+.contact-btn
+{
+  text-transform: uppercase;
+  color: #e3b505;
+  border-color: #e3b505;
+
+}
+.contact-btn:hover
+{
+  background-color: var(--mainYellow);
+}
+/*says*/
+.customer-car-card
+{
+  margin-top: -4rem !important;
+  color: var(--mainGrey);
+}
+.customer-img
+{
+  border: 0.4rem solid var(--mainWhite);
+
+}
+.customer-name
+{
+  color: var(--mainBlue);
+  margin: 0.5rem;
+}
+.customer-quote{
+  color: var(--mainGrey);
+}
+.ustomer-quote
+{
+  color: var(--mainBlack);
+}
+.footer
+{
+  background: var(--mainBlack);
+}
+.footer-icon
+{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #e3b505;
+  transition: all 1s ease-in-out;
+}
+.footer-icon:hover
+{
+  color: var(--mainBlue);
+}
